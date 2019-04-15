@@ -1,0 +1,25 @@
+<p-card>
+  <div class="Ideas">
+    <a>
+      <li class="fa fa-angle-up"></li>
+    </a>
+    {{idea.upvotes - idea.downvotes  || 0 }}
+    <a>
+      <li class="fa fa-angle-down"></li>
+    </a>
+
+    <h2 class="Idea-header">{{idea.idea}} </h2>
+
+  </div>
+
+  <p class="idea-description">{{idea.desciption}}</p>
+
+  <div class="Idea-footer">
+
+    <p>
+      Created by <a>{{idea.author.username}}</a>
+
+    </p>
+    <p>comments: ({{idea.comments.length}})</p>
+  </div>
+</p-card>
